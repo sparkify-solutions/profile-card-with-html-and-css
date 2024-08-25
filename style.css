@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.card::before
+{
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #0d3d7c;
+    border-radius: 25px 25px 0 0 
+    ;
+    top: 0;
+    left: 0;
+}
+
+.image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    padding: 3px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.image .profile-image
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.card .text-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.text-data .name
+{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.text-data .job
+{
+    font-size: 15px;
+    font-weight: 550;   
+}
+
+.card .media-buttons
+{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.media-buttons .link
+{
+    height: 34px;
+    width: 34px;
+    background-color:blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .buttons
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons .button
+{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 440;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 24px;
+    margin: 0 10px;
+    background-color: #0d3d7c;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover
+{
+    background-color: #021e46;
+}
+
+.card .data-analytics
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.data-analytics .data
+{
+    display: flex;
+    align-items: center; 
+    color: #000000;
+    padding: 0 23px; 
+    font-size: 17px; 
+    font-weight: 600;
+    border-right: 2px solid #837b7b;
+}
+
+.data i
+{
+    margin-right: 6px;
+}
+
+.data:last-child
+{
+    border-right: none;
+}
